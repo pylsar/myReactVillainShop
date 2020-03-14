@@ -1,27 +1,25 @@
-.card_list{
+.card-list {
     border: 1px solid red;
-    &__box{
+    &__box {
         display: flex;
-        justify-content: space-between;
-        &__img {
+        &__left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 30%;
             & img {
                 width: 100%;
             }
         }
-        &__buy {
-            margin-right: 50px;
+        &__right{
+            width: 70%;
+            border: 1px solid green;
+            & img {
+                width: 50px;
+            }
         }
-        &__result {
-            margin-top: 20px;
+        &__item{
+            display: flex;
         }
-    }
-    &--subtitle{
-        text-align: center;
-        margin:10px 0px;
-    }
-    & h2 {
-        margin: 20px 0px;
-        text-align: center;
     }
 }

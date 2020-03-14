@@ -1,13 +1,12 @@
-import React from 'react'
+import React from "react";
 
-import './Buy.scss'
+const Buy = ({ name, price }) => {
+  return (
+    <div>
+      <span>{name}</span>
+      <span>{price}</span>
+    </div>
+  );
+};
 
-const Buy = ({name, add, price, rub}) => {
-    return (
-        <div className="add">
-            <span>{name}</span><span>{price} {rub}</span><button>{add}</button>
-        </div>
-    )
-}
-
-export default Buy
+export default Buy;
