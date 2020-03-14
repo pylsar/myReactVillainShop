@@ -1,0 +1,63 @@
+{
+    "header": [
+      {
+        "name": "Walt Disney",
+        "link": "/walt-disney"
+      },
+      {
+        "name": "Союзмультфильм",
+        "link": "/souzmyltflm"
+      },
+      {
+        "name": "Metro Goldwyn Maers",
+        "link": "/metro-goldwyn-maer"
+      },
+      {
+        "name": "Marvel",
+        "link": "/marvel"
+      }
+    ],
+    "sidebar": [
+      {
+        "label": "Черепашки Ниндзя",
+        "link": "/ninja-turtles",
+        "src": "",
+        "alt": "черепашки ниндзя"
+      },
+      {
+        "label": "Простоквашино",
+        "link": "/prostokvashino",
+        "src": "",
+        "alt": "Простоквашино"
+      },
+      {
+        "label": "Том и Джерри",
+        "link": "/tom-and-jerry",
+        "src": "",
+        "alt": "Том и Джерри"
+      }
+    ],
+    "ninja": [
+      {
+        "name": "Леонардо",
+        "link": "/ninja-turtles/leonardo",
+        "src": "leonardo"
+      },
+      {
+        "name": "Донателло",
+        "link": "/ninja-turtles/donatello",
+        "src": "donatello"
+      },
+      {
+        "name": "Рафаэль",
+        "link": "/ninja-turtles/rafael",
+        "src": "rafael"
+      },
+      {
+        "name": "Микеланджело",
+        "link": "/ninja-turtles/mikelandjelo",
+        "src": "mikelandjelo"
+      }
+    ]
+  }
+  

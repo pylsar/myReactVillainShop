@@ -1,0 +1,13 @@
+.header {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 20px 0px;
+    & ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        & li {
+            margin-left: 30px;
+        }
+    }
+}
