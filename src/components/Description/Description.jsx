@@ -1,4 +1,6 @@
-import React from "react";
+import React, {Fragment} from "react";
+
+import './Description.scss'
 
 class Description extends React.Component {
   state = {
@@ -10,13 +12,15 @@ class Description extends React.Component {
       description: !this.state.description
     });
   };
-  render() {
+  render(props) {
     return (
-      <div>
-        <h2>Описание</h2>
-        <button onClick={this.handleDescription}>push</button>
-        {this.state.description && <p>123</p>}
-      </div>
+      <Fragment>
+        <div className="description">
+          <h2>Описание</h2>
+          <button onClick={this.handleDescription}>{this.state.description ? ' ↑ ' : ' ↓ ' }</button>
+        </div>
+        {this.state.description && <p>{this.props.descr}</p>}
+      </Fragment>
     );
   }
 }
