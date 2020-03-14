@@ -1,8 +1,8 @@
-import React from "react";
+import React from "react"
 
-import Buy from '../../Buy/Buy';
-import Btn from '../../Btn/Btn';
-import Description from '../../Description/Description';
+import Buy from '../../Buy/Buy'
+import Btn from '../../Btn/Btn'
+import Description from '../../Description/Description'
 
 import '../Pages.scss'
 import PizzaImg from '../../../assets/img/pizza.jpg'
@@ -10,51 +10,55 @@ import MeatIcon from '../../../assets/img/meat.png'
 import FishIcon from '../../../assets/img/fish.png'
 import SausegeIcon from '../../../assets/img/kolb.png'
 
-
 class Pizza extends React.Component {
   state = {
     chooseMeat: false,
     chooseFish: false,
     chooseSausege: false,
     sum: 0
-  };
+  }
+
   handleMeat = () => {
     this.setState({
       chooseMeat: true,
       sum: this.state.sum + 500
-    });
-  };
+    })
+  }
+
   handleMeatDel = () => {
     this.setState({
       chooseMeat: false,
       sum: this.state.sum - 500
-    });
-  };
+    })
+  }
 
   handleFish = () => {
     this.setState({
       chooseFish: true,
       sum: this.state.sum + 400
-    });
-  };
+    })
+  }
+
   handleFishDel = () => {
     this.setState({
       chooseFish: false,
       sum: this.state.sum - 400
-    });
-  };
+    })
+  }
+
   handleSausege = () => {
     this.setState({
       chooseSausege: true,
       sum: this.state.sum + 399
-    });
-  };
+    })
+  }
+
   handleSausegeDel = () => {
     this.setState({
       chooseSausege: false,
       sum: this.state.sum - 399
-    });
-  };
+    })
+  }
 
   render() {
     return (
@@ -65,8 +69,8 @@ class Pizza extends React.Component {
             </div>
             <div className="pages__box__right">
                 <div className="pages__box__item">
-                    <div className={this.state.chooseMeat ? "img-full" : "img-transparent "}>
-                        <img src={MeatIcon} alt="Свинина"/>
+                    <div >
+                        <img src={MeatIcon} alt="Свинина" className={this.state.chooseMeat ? "img-full" : "img-transparent "}/>
                     </div>
                     <Buy name="свинина" price={500} />
                     {this.state.chooseMeat ? (
@@ -76,8 +80,8 @@ class Pizza extends React.Component {
                     )}
                 </div>
                 <div className="pages__box__item">
-                    <div className={this.state.chooseFish ? "img-full" : "img-transparent "}>
-                        <img src={FishIcon} alt="Рыба"/>
+                    <div >
+                        <img src={FishIcon} alt="Рыба" className={this.state.chooseFish ? "img-full" : "img-transparent "}/>
                     </div>
                     <Buy name="семга" price={400} />
                     {this.state.chooseFish ? (
@@ -87,8 +91,8 @@ class Pizza extends React.Component {
                     )}
                 </div>
                 <div className="pages__box__item">
-                    <div className={this.state.chooseSausege ? "img-full" : "img-transparent "}>
-                        <img src={SausegeIcon} alt="Колбаса"/>
+                    <div >
+                        <img src={SausegeIcon} alt="Колбаса" className={this.state.chooseSausege ? "img-full" : "img-transparent "}/>
                     </div>
                     <Buy name="колбаска" price={399} />
                     {this.state.chooseSausege ? (
@@ -123,9 +127,9 @@ class Pizza extends React.Component {
         Используя эти ингридиенты, Вы сможете перетащить Вашего друга на темную сторону
         "/>
       </div>
-    );
+    )
   }
 }
 
-export default Pizza;
+export default Pizza
 

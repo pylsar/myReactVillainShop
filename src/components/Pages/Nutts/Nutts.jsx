@@ -1,15 +1,13 @@
-import React from "react";
+import React from "react"
 
-import Buy from '../../Buy/Buy';
-import Btn from '../../Btn/Btn';
-import Description from '../../Description/Description';
+import Buy from '../../Buy/Buy'
+import Btn from '../../Btn/Btn'
+import Description from '../../Description/Description'
 
 import '../Pages.scss'
 import NuttsImg from '../../../assets/img/ice.jpg'
 import WalnutIcon from '../../../assets/img/nut1.png'
 import PeanutIcon from '../../../assets/img/nut2.png'
-
-
 
 class Nutts extends React.Component {
   
@@ -47,8 +45,6 @@ class Nutts extends React.Component {
     })
   }
   
-
-
   render() {
     return (
       <div className="pages">
@@ -58,8 +54,8 @@ class Nutts extends React.Component {
             </div>
             <div className="pages__box__right">
                 <div className="pages__box__item">
-                    <div className={this.state.chooseWalnut ? "img-full" : "img-transparent "}>
-                        <img src={WalnutIcon} alt="Грецкий орех"/>
+                    <div>
+                        <img src={WalnutIcon} alt="Грецкий орех" className={this.state.chooseWalnut ? "img-full" : "img-transparent "}/>
                     </div>
                     <Buy name="грецкий орех" price={188} />
                     {this.state.chooseWalnut ? (
@@ -69,8 +65,8 @@ class Nutts extends React.Component {
                     )}
                 </div>
                 <div className="pages__box__item">
-                    <div className={this.state.choosePeanut ? "img-full" : "img-transparent "}>
-                        <img src={PeanutIcon} alt="Арахис"/>
+                    <div >
+                        <img src={PeanutIcon} alt="Арахис" className={this.state.choosePeanut ? "img-full" : "img-transparent "}/>
                     </div>
                     <Buy name="арахис" price={90} />
                     {this.state.choosePeanut ? (
@@ -104,6 +100,6 @@ class Nutts extends React.Component {
   }
 }
 
-export default Nutts;
+export default Nutts
 
 
