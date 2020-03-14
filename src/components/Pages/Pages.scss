@@ -1,4 +1,4 @@
-.card-list {
+.pages {
     border: 1px solid red;
     &__box {
         display: flex;
@@ -13,13 +13,25 @@
         }
         &__right{
             width: 70%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
             border: 1px solid green;
+            
+        }
+        &__item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
             & img {
                 width: 50px;
             }
         }
-        &__item{
-            display: flex;
+        &__result {
+            width: 100%;
+            font-size: 20px;
         }
     }
 }

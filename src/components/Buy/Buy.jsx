@@ -1,8 +1,10 @@
 import React from "react";
 
+import './Buy.scss'
+
 const Buy = ({ name, price }) => {
   return (
-    <div>
+    <div className="buy">
       <span>{name}</span>
       <span>{price}</span>
     </div>
