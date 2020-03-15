@@ -1,0 +1,18 @@
+.home {
+    position: relative;
+    border: 1px solid red;
+    & img {
+        width: 200px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    & h1 {
+        text-align: center;
+    }
+
+    & blockquote {
+        font-family: 'Pacifico', cursive;
+    }
+    
+}
