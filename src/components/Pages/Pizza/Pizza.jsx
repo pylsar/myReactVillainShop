@@ -69,7 +69,7 @@ class Pizza extends React.Component {
             </div>
             <div className="pages__box__right">
                 <div className="pages__box__item">
-                    <div >
+                    <div className="pages__box__item__pic">
                         <img src={MeatIcon} alt="Свинина" className={this.state.chooseMeat ? "img-full" : "img-transparent "}/>
                     </div>
                     <Buy name="свинина" price={500} />
@@ -80,7 +80,7 @@ class Pizza extends React.Component {
                     )}
                 </div>
                 <div className="pages__box__item">
-                    <div >
+                    <div className="pages__box__item__pic">
                         <img src={FishIcon} alt="Рыба" className={this.state.chooseFish ? "img-full" : "img-transparent "}/>
                     </div>
                     <Buy name="семга" price={400} />
@@ -91,7 +91,7 @@ class Pizza extends React.Component {
                     )}
                 </div>
                 <div className="pages__box__item">
-                    <div >
+                    <div className="pages__box__item__pic">
                         <img src={SausegeIcon} alt="Колбаса" className={this.state.chooseSausege ? "img-full" : "img-transparent "}/>
                     </div>
                     <Buy name="колбаска" price={399} />

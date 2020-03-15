@@ -8,6 +8,7 @@ import '../Pages.scss'
 import NuttsImg from '../../../assets/img/ice.jpg'
 import WalnutIcon from '../../../assets/img/nut1.png'
 import PeanutIcon from '../../../assets/img/nut2.png'
+import HazelnutIcon from '../../../assets/img/funduk.png'
 
 class Nutts extends React.Component {
   
@@ -44,6 +45,20 @@ class Nutts extends React.Component {
       sum: this.state.sum - 90
     })
   }
+
+  handleHazelnut = () => {
+    this.setState({
+      chooseHazelnut: true,
+      sum: this.state.sum + 300
+    })
+  }
+
+  handleHazelnutDel = () => {
+    this.setState({
+      chooseHazelnut: false,
+     sum: this.state.sum - 300
+    })
+  }
   
   render() {
     return (
@@ -54,7 +69,7 @@ class Nutts extends React.Component {
             </div>
             <div className="pages__box__right">
                 <div className="pages__box__item">
-                    <div>
+                    <div className="pages__box__item__pic">
                         <img src={WalnutIcon} alt="Грецкий орех" className={this.state.chooseWalnut ? "img-full" : "img-transparent "}/>
                     </div>
                     <Buy name="грецкий орех" price={188} />
@@ -65,7 +80,7 @@ class Nutts extends React.Component {
                     )}
                 </div>
                 <div className="pages__box__item">
-                    <div >
+                    <div className="pages__box__item__pic">
                         <img src={PeanutIcon} alt="Арахис" className={this.state.choosePeanut ? "img-full" : "img-transparent "}/>
                     </div>
                     <Buy name="арахис" price={90} />
@@ -75,16 +90,29 @@ class Nutts extends React.Component {
                     <Btn btnNameAdd="Добавить" onClick={this.handlePeanut} />
                     )}
                 </div>
+                <div className="pages__box__item">
+                    <div className="pages__box__item__pic">
+                        <img src={HazelnutIcon} alt="Фундук" className={this.state.chooseHazelnut ? "img-full" : "img-transparent "}/>
+                    </div>
+                    <Buy name="фундук" price={300} />
+                    {this.state.chooseHazelnut ? (
+                    <Btn btnNameRemove="Удалить" onClick={this.handleHazelnutDel} />
+                    ) : (
+                    <Btn btnNameAdd="Добавить" onClick={this.handleHazelnut} />
+                    )}
+                </div>
                 <div className="pages__box__result">       
                   <span>
                   Вы добавили:
                   {!this.state.chooseWalnut &
-                  !this.state.choosePeanut
+                  !this.state.choosePeanut &
+                  !this.state.chooseHazelnut
                       ? "ничего"
                       : ""}
                   {`
                   ${this.state.chooseWalnut ? "Грецкий орех" : ""}
                   ${this.state.choosePeanut ? "Арахис" : ""}
+                  ${this.state.chooseHazelnut ? "Фундук" : ""}
                   `}
                   </span>
                   <div>
@@ -94,7 +122,7 @@ class Nutts extends React.Component {
             </div>
         </div>
         <Description 
-        descr="У Вашего друга нелюбовь к орешкам? ну такое точно нельзя пропускать... Мы даем Вам возможность приобрести немного арахиса и грецких орехов. Чательно размелчим и равномерно добавим в мороженое - Ваш злодейский вечер пройдет великолепно!"/>
+        descr="У Вашего друга нелюбовь к орешкам? ну такое точно нельзя пропускать... Мы даем Вам возможность приобрести немного орешков. Чательно размельчим и равномерно добавим в мороженое - Ваш злодейский вечер пройдет великолепно!"/>
       </div>
     );
   }

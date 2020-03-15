@@ -70,7 +70,7 @@ class Alcohol extends React.Component {
             </div>
             <div className="pages__box__right">
                 <div className="pages__box__item">
-                    <div >
+                    <div className="pages__box__item__pic">
                         <img src={ConiacIcon} alt="Коньяк" className={this.state.chooseConiac ? "img-full" : "img-transparent "}/>
                     </div>
                     <Buy name="коньяк" price={250} />
@@ -81,7 +81,7 @@ class Alcohol extends React.Component {
                     )}
                 </div>
                 <div className="pages__box__item">
-                    <div >
+                    <div className="pages__box__item__pic">
                         <img src={TequilaIcon} alt="Текила" className={this.state.chooseTequila ? "img-full" : "img-transparent "}/>
                     </div>
                     <Buy name="текила" price={300} />
@@ -92,7 +92,7 @@ class Alcohol extends React.Component {
                     )}
                 </div>
                 <div className="pages__box__item">
-                    <div >
+                    <div className="pages__box__item__pic">
                         <img src={VineIcon} alt="Вино" className={this.state.chooseVine ? "img-full" : "img-transparent"}/>
                     </div>
                     <Buy name="вино" price={176} />
@@ -123,10 +123,7 @@ class Alcohol extends React.Component {
             </div>
         </div>
         <Description 
-        descr="Ваш друг вегетарианец заказал пиццу, какие ингридиенты вы хотите добавить?
-        Вы можете добавить сочную свининку или немного рыбки, колбаска тоже будет к месту.
-        Используя эти ингридиенты, Вы сможете перетащить Вашего друга на темную сторону
-        "/>
+        descr="Ваш друг не употребляет алкоголь? ну так пора добавить алкогольную начинку в любимые конфеты. Всего несколько конфет и вечер станет веселее!"/>
       </div>
     );
   }

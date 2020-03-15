@@ -23,9 +23,18 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 15px;
-            & img {
+            height: 30px;
+            &__pic {
                 width: 50px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & img {
+                    height: 100%;
+                }
             }
+            
         }
         &__result {
             width: 100%;
