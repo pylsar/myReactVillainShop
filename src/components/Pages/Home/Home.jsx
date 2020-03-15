@@ -21,8 +21,8 @@ const Home = () => {
             <blockquote>
                 "Захожу сюда в каждый канун Рождества" - Гринч
             </blockquote>
-            <img src={GavsIcon} alt="Братья Гавс"/>
-            <img src={GrinchIcon} alt="Гринч"/>
+            <img className="home__right" src={GavsIcon} alt="Братья Гавс"/>
+            <img className="home__left" src={GrinchIcon} alt="Гринч"/>
         </div>
     )
 }

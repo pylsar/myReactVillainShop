@@ -1,18 +1,77 @@
 .home {
     position: relative;
-    border: 1px solid red;
-    & img {
-        width: 200px;
-        position: absolute;
-        top: 0;
-        right: 0;
+    height: 85%;
+    padding: 10px 20px;
+    &--subtitle{
+        text-align: center;
+        font-weight: bold;
     }
+
+    & img {
+        width: 180px;
+        position: absolute;
+    }
+
+    &__right{
+        top: -100px;
+        right: -50px;
+    }
+
+    &__left {
+        bottom: -50px;
+        left: -120px;
+    }
+
     & h1 {
         text-align: center;
     }
 
     & blockquote {
-        font-family: 'Pacifico', cursive;
+        font-family: 'Pacifico', cursive, sans-serif;
+        font-size: 20px;
+        margin-top: 20px;
     }
     
 }
+
+@media screen and (max-width: 1024px) {
+    .home{
+        & blockquote{
+            font-size: 18px;
+        }
+    }
+}	
+
+
+@media screen and (max-width: 968px) {
+    .home{
+        & blockquote{
+            font-size: 14px;
+        }
+        & img {
+            width: 130px;
+        }
+        &__left{
+            bottom: -30px;
+            left: -60px;
+        }
+        &__right {
+            right: -30px;
+        }
+    }
+}	
+
+@media screen and (max-width: 720px) {
+    .home{
+        &--subtitle{
+            font-size: 14px;
+        }
+        & blockquote{
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        &__right {
+            display: none;
+        }
+    }
+}	
