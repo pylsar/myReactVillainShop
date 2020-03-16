@@ -8,3 +8,27 @@
         cursor: pointer;  
     }
 }
+
+@media screen and (max-width: 850px) {
+   .btn {
+       & button {
+           width: 110px;
+       }
+   }
+}	
+
+@media screen and (max-width: 768px) {
+    .btn {
+        & button {
+            height: 20px;
+        }
+    }
+}	
+
+@media screen and (max-width: 600px) {
+    .btn {
+        & button {
+            width: 80px;
+        }
+    }
+}	

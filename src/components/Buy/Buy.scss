@@ -15,3 +15,15 @@
         width: 30%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .buy {
+        height: 20px;
+        font-size: 16px;
+    }
+}	
+@media screen and (max-width: 600px) {
+    .buy {
+        width: 180px;
+    }
+}	

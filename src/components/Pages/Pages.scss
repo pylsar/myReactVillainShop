@@ -42,3 +42,42 @@
         }
     }
 }
+
+
+@media screen and (max-width: 960px) {
+    .pages {
+       &__box{
+           &__right{
+               align-items: flex-start;
+           }
+       }
+    }
+}	
+
+@media screen and (max-width: 768px) {
+    .pages {
+       &__box{
+           flex-direction: column;
+           &__left {
+               margin: 0 auto;
+           }
+           &__right {
+               margin: 0 auto;
+               width: 100%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+           }
+           &__item {
+               margin-bottom: 5px;
+               height: 20px;
+               &__pic {
+                   height: 20px;
+               }
+           }
+           &__result {
+               font-size: 16px;
+           }
+       }
+    }
+}	
