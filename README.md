@@ -2,4 +2,4 @@
 
 небольшой проект с целью закрепить базовые знания по react
 
-технологии которые использую: react, create-react-app, react-router, scss
+технологии которые использую: react, create-react-app, react-router, scss, prop-types
