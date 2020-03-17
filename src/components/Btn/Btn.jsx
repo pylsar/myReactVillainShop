@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types'
 
 import './Btn.scss'
 
@@ -13,4 +14,13 @@ const Btn = ({ btnNameAdd, btnNameRemove, onClick }) => {
   );
 };
 
+Btn.propTypes = {
+  btnNameAdd: PropTypes.string.isRequired,
+  btnNameRemove: PropTypes.string,
+  onClick: PropTypes.func.isRequired
+}
+
+
 export default Btn;
+
+
