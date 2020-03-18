@@ -1,0 +1,27 @@
+.auth {
+    border: 1px solid red;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    &__items{
+        display: flex;
+        align-items: center;
+        &__input {
+            width: 25vw;
+            height: 30px;
+            margin: 15px 15px 15px 0;
+            border: 2px solid skyblue;
+            padding-left: 10px;
+            &--error {
+                border: 2px solid red;
+            }  
+        } 
+    }
+    &__bottom {
+        display: flex;
+    }  
+    &__error-text {
+        color: red;
+    }
+   
+}

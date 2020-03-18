@@ -1,0 +1,22 @@
+.help {
+    display: block;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, skyblue -50%, purple 150%);
+    color: white;
+    border-radius: 50%;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+    &__modal {
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(to right, skyblue -50%, purple 150%);
+        position: absolute;
+        bottom: 0;
+        right: -200px;
+    }
+}
