@@ -30,7 +30,7 @@ class Auth extends React.Component {
     if (!this.state.name) {
       nameError = "не может быть пустым"
     }
-// поле emIail
+// поле email
     if (!this.state.email.includes("@")) {
       emailError = "неверное значение"
     }

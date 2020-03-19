@@ -12,11 +12,12 @@
     cursor: pointer;
     position: relative;
     &__modal {
-        width: 200px;
-        height: 200px;
+        width: 380px;
+        height: 100px;
+        padding: 10px;
         background: linear-gradient(to right, skyblue -50%, purple 150%);
         position: absolute;
-        bottom: 0;
-        right: -200px;
+        bottom: 25px;
+        left: 25px;
     }
 }

@@ -1,8 +1,7 @@
 .auth {
-    border: 1px solid red;
     width: 80%;
     display: flex;
-    margin: 0 auto;
+    margin: 20px auto;
     &__items{
         display: flex;
         align-items: center;
@@ -22,6 +21,12 @@
     }  
     &__error-text {
         color: red;
-    }
-   
+    } 
 }
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+}	

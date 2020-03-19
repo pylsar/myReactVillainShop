@@ -7,7 +7,7 @@ import Card from './components/Card/Card'
 function App() {
   return (
     <div className="App">
-      <Link to ="/auth">Авторизация</Link>
+      <Link className="auth-link" to ="/auth">Авторизация</Link>
       <Card />
     </div>
   );
