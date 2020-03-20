@@ -21,3 +21,18 @@
         left: 25px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .help {
+        width: 20px;
+        height: 20px;
+        &__modal {
+            right: 0;
+            bottom: -80px;
+            width: 300px;
+            height: 70px;
+            font-size: 12px;
+            transform: translateX(-40%);
+        }
+    }
+}	
